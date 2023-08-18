@@ -6,22 +6,36 @@ import { Header } from './components/Header'
 export default function Home() {
   return (
     <body>
-      <Header/>
-      <main className='h-screen'>
-        <div className='flex justify-center items-center h-3/5'>
-          About conoaroma
+      <main className='grid grid-cols-2 grid-rows-10 h-screen'>
+      <header  className='col-start-1 col-end-3 row-start-1 row-end-2'>
+        <div className='text-center'>
+          <Link href='/' className='text-3xl inline-block pt-1'>
+            conoaroma
+          </Link>
+          <p className='text-xs'>好みのアロマが見つかるアプリ</p>
         </div>
-        <div className='h-2/5 text-center items-center'>
-          <div className='h-1/2'>
-            <button className='rounded-full border-2 p-4 w-1/2'>
+      </header>
+        <div className='col-start-1 col-end-3 row-start-2 row-end-5'>
+            <Image
+              src='/images/essentialoil.jpg'
+              alt='essential-oil'
+              width={300}
+              height={400}
+            />
+        </div>
+        <div className='col-start-1 col-end-3 row-start-5 row-end-9'>
+          discription
+        </div>
+          {/* ボタンの配置について: スマホサイズだったら縦, iPad PCサイズだったら横にする */}
+        <div className='col-start-1 col-end-2 row-start-9 row-end-10 text-center'>
+          <button className='rounded-full border-2 p-4 w-1/2'>
             <Link href='/feeling'>気分から探す</Link>
           </button>
-          </div>
-          <div className='h-1/2'>
-            <button className='rounded-full border-2 p-4 w-1/2'>
+        </div>
+        <div className='col-start-2 col-end-3 row-start-9 row-end-10 text-center'>
+          <button className='rounded-full border-2 p-4 w-1/2'>
             <Link href='/category'>系統から見つける</Link>
           </button>
-          </div>
         </div>
       </main>
     </body>
