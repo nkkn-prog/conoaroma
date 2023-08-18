@@ -4,10 +4,11 @@ import React from 'react'
 export const Header = () => {
   return (
     <header>
-      <div className='text-center border-2 border-black'>
-        <Link href='/' className='text-3xl inline-block py-5'>
+      <div className='text-center'>
+        <Link href='/' className='text-3xl inline-block pt-1'>
           conoaroma
         </Link>
+        <p className='text-xs'>好みのアロマが見つかるアプリ</p>
       </div>
     </header>
   )
