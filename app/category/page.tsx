@@ -1,13 +1,10 @@
 import Link from 'next/link';
 import React from 'react';
 
-const CategoryPage = () => {
-  return(
+export default function Category() {
+  return (
     <main>
-      <h1>Category Page</h1>
-      <Link href='/'>Back To Home</Link>
+      <p>ここにAPI確認用のフォームを作成する</p>
     </main>
   )
 };
-
-export default CategoryPage;
