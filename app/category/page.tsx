@@ -19,6 +19,10 @@ export default function Form() {
 
   console.log(watch());
 
+  function handleSubmit(): React.MouseEventHandler<HTMLInputElement> | undefined {
+    throw new Error('Function not implemented.');
+  }
+
   return (
     <form>
       <div className='mb-6'>
@@ -55,7 +59,7 @@ export default function Form() {
         </select>
       </div>
 
-      <input type="submit" className='border-black border-2'/>
+      <input type="submit" className='border-black border-2' onClick={handleSubmit()}/>
     </form>
   )
 };
