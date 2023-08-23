@@ -35,6 +35,11 @@ export default function Home() {
             <Link href='/category'>系統から見つける</Link>
           </button>
         </div>
+        <div>
+          <button className='rounded-full border-2 p-4 w-3/4'>
+            <Link href='/api'>？？？</Link>
+          </button>
+        </div>
       </main>
     </body>
   )
