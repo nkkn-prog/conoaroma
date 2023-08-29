@@ -1,11 +1,12 @@
-import type { NextPage } from 'next'
+'use client'
 import useSWR from 'swr'
-import axios from '../src/libs/axios'
+import axios from '../src/axios'
+import React from 'react'
 
-const Test: NextPage = () => {
-  const { data, error } = useSWR('/api/test', () =>
+export default function Hello() {
+  const { data, error } = useSWR('/api/hello', () =>
   axios
-      .get('/api/test')
+      .get('/api/hello')
       .then((res: any) => res.data)
   )
 
@@ -18,5 +19,3 @@ const Test: NextPage = () => {
   </div>
   )
 }
-
-export default Test

@@ -8,9 +8,9 @@ export default function Home() {
       <header className='col-start-1 col-end-3 row-start-1 row-end-2'>
         <div className='text-center'>
           <Link href='/' className='text-3xl inline-block pt-1'>
-            conoaroma
+            Test
           </Link>
-          <p className='text-xs'>好みのアロマが見つかるアプリ</p>
+          <p className='text-xs'>testesttest</p>
         </div>
       </header>
         <div className='col-start-1 col-end-3 row-start-2 row-end-5 text-center align-middle'>
